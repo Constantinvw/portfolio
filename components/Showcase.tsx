@@ -7,24 +7,21 @@ import Image from "next/image";
 const showcaseProjects = [
   {
     title: "TEAM MALIZIA",
-    label: "OCEAN RACE · 2026",
-    image: "/projects/malizia.jpg",
+    label: "NAVAL ENGINEERING · OCEAN RACE 2026",
+    image: "/projects/malizia1.1.jpeg",
     bg: "#0a1628",
-    textLight: true,
   },
   {
     title: "Efsyco",
     label: "AUTONOMOUS DRONES · STARTUP",
-    image: "/projects/efsyco.jpg",
+    image: "/projects/efsyco1.1.png",
     bg: "#111111",
-    textLight: true,
   },
   {
-    title: "SWARM",
-    label: "UNDERWATER ROBOTICS · ETH",
-    image: "/projects/swarm.jpg",
+    title: "SWARM · Aris ETH",
+    label: "MULTI-AGENT UNDERWATER SYSTEM",
+    image: "/projects/swarm1.1.jpeg",
     bg: "#0d2233",
-    textLight: true,
   },
 ];
 
