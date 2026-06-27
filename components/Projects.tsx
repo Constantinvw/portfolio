@@ -28,8 +28,8 @@ const projects: Project[] = [
       "Part of the technical team for the new Malizia IMOCA Seaxplorer 4, contributing to design and construction ahead of the launch and the Ocean Race Atlantic in New York.",
   },
   {
-    title: "SWARM · Aris ETH",
-    type: "UNDERWATER ROBOTICS",
+    title: "FOCUS PROJECT SWARM",
+    type: "UNDERWATER ROBOTICS at Aris ETH",
     bg: "#0d2233",
     textLight: true,
     images: ["/projects/swarm1.1.jpeg", "/projects/swarm1.2.jpeg", "/projects/swarm1.3.jpeg"],

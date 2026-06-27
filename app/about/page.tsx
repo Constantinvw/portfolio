@@ -6,8 +6,7 @@ export default function About() {
       <div className="max-w-lg space-y-6 text-sm leading-7 text-white/90">
         <p>
           Hi, I&apos;m Constantin. I design and build robots — for racing
-          oceans, exploring underwater, and flying autonomously. Some reach the
-          finish line, some sink.
+          oceans, exploring underwater, and flying autonomously.
         </p>
         <p>
           Currently I&apos;m part of the technical team at{" "}
@@ -36,7 +35,7 @@ export default function About() {
           in Zürich, and spent over a year as Controls &amp; Hardware Engineer
           for{" "}
           <a
-            href="#"
+            href="https://aris-space.ch/our-projects/aris-swarm/"
             className="text-blue-400 underline underline-offset-2 hover:text-blue-300 transition-colors"
           >
             SWARM
@@ -46,7 +45,7 @@ export default function About() {
         <p>
           I also co-founded{" "}
           <a
-            href="#"
+            href="https://www.linkedin.com/company/108298640/"
             className="text-blue-400 underline underline-offset-2 hover:text-blue-300 transition-colors"
           >
             Efsyco
