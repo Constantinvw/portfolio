@@ -46,17 +46,10 @@ export default function Footer() {
         {/* Left: name + links */}
         <div>
           <p className="text-2xl md:text-3xl font-medium tracking-tight mb-6">
-            Constantin V.
+            Constantin von Wuthenau
           </p>
           <div className="flex items-center gap-6">
-            <a
-              href="https://www.instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-gray-400 hover:text-black transition-colors"
-            >
-              Instagram
-            </a>
+            
             <a
               href="https://github.com/Constantinvw"
               target="_blank"
@@ -81,7 +74,7 @@ export default function Footer() {
       </div>
 
       <p className="text-xs text-gray-300 mt-12">
-        © {new Date().getFullYear()} Constantin V.
+        © {new Date().getFullYear()} Constantin von Wuthenau
       </p>
     </footer>
   );
