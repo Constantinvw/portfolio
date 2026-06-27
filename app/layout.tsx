@@ -8,8 +8,21 @@ import { cn } from "@/lib/utils";
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
-  title: "Constantin — Designer & Developer",
-  description: "I design and build software products.",
+  title: "Constantin von Wuthenau",
+  description: "I design and build robots — for racing oceans, exploring underwater, and flying autonomously.",
+  openGraph: {
+    title: "Constantin von Wuthenau",
+    description: "I design and build robots — for racing oceans, exploring underwater, and flying autonomously.",
+    url: "https://constantin.wuthenau.de",
+    siteName: "Constantin von Wuthenau",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Constantin von Wuthenau",
+    description: "I design and build robots — for racing oceans, exploring underwater, and flying autonomously.",
+  },
 };
 
 export default function RootLayout({
