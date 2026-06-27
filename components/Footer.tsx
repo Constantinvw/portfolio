@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 
 function LiveClock() {
   const [time, setTime] = useState<string>("");
@@ -31,9 +30,9 @@ function LiveClock() {
   }, []);
 
   return (
-    <div className="text-right">
-      <p className="text-sm font-medium text-black">Lorient, France</p>
-      <p className="text-sm text-gray-400">
+    <div className="md:text-right">
+      <p className="text-base font-medium text-black">Lorient, France</p>
+      <p className="text-base text-gray-400 mt-0.5">
         {date} at {time}
       </p>
     </div>
@@ -42,34 +41,48 @@ function LiveClock() {
 
 export default function Footer() {
   return (
-    <footer className="px-5 py-6 flex items-center justify-between border-t border-gray-100">
-      <div className="flex items-center gap-5">
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-gray-500 hover:text-black transition-colors"
-        >
-          Instagram
-        </a>
-        <a
-          href="https://github.com/Constantinvw"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-gray-500 hover:text-black transition-colors"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://www.linkedin.com/in/constantin-v-3ab341213/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sm text-gray-500 hover:text-black transition-colors"
-        >
-          LinkedIn
-        </a>
+    <footer className="px-6 md:px-10 pt-16 pb-10 border-t border-gray-100">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-10">
+        {/* Left: name + links */}
+        <div>
+          <p className="text-2xl md:text-3xl font-medium tracking-tight mb-6">
+            Constantin V.
+          </p>
+          <div className="flex items-center gap-6">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-400 hover:text-black transition-colors"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://github.com/Constantinvw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-400 hover:text-black transition-colors"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/constantin-v-3ab341213/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-400 hover:text-black transition-colors"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        {/* Right: location + clock */}
+        <LiveClock />
       </div>
-      <LiveClock />
+
+      <p className="text-xs text-gray-300 mt-12">
+        © {new Date().getFullYear()} Constantin V.
+      </p>
     </footer>
   );
 }
