@@ -8,11 +8,11 @@ import { cn } from "@/lib/utils";
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
-  title: "Constantin von Wuthenau",
-  description: "I design and build robots — for racing oceans, exploring underwater, and flying autonomously.",
+  title: "Constantin",
+  description: "I design and build robotics.",
   openGraph: {
-    title: "Constantin von Wuthenau",
-    description: "I design and build robots — for racing oceans, exploring underwater, and flying autonomously.",
+    title: "Constantin",
+    description: "I design and build robotics.",
     url: "https://constantin.wuthenau.de",
     siteName: "Constantin von Wuthenau",
     locale: "en_US",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Constantin von Wuthenau",
-    description: "I design and build robots — for racing oceans, exploring underwater, and flying autonomously.",
+    title: "Constantin",
+    description: "I design and build robotics.",
   },
 };
 
