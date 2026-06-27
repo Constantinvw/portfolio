@@ -15,7 +15,7 @@ const projects: Project[] = [
     images: ["/projects/efsyco1.1.png", "/projects/efsyco1.2.jpeg"],
     year: "2025–",
     description:
-      "Co-founding Efsyco, building autonomous fixed-wing aerial solutions that operate reliably where GPS fails — across inspection, infrastructure, and other demanding use cases. Early days, moving fast.",
+      "Co-founding Efsyco, building autonomous fixed-wing aerial solutions that operate reliably where GPS fails — across inspection, infrastructure, and other demanding use cases. Won the Startup Campus Innosuisse Prize. Early days, moving fast.",
   },
   {
     title: "TEAM MALIZIA",
