@@ -2,44 +2,45 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 
 const projects = [
   {
-    title: "AI Second Brain — Nova",
+    title: "Projekt 1",
     type: "PRODUCT",
     bg: "#4169E1",
-    description: "A self-organizing second brain powered by AI.",
+    // image: "/projects/projekt1.png",  ← Foto: einfach in public/projects/ ablegen und hier eintragen
   },
   {
-    title: "Shitcheck.com",
+    title: "Projekt 2",
     type: "PRODUCT",
     bg: "#FF6B00",
-    description: "Validate your startup idea before wasting time on it.",
+    // image: "/projects/projekt2.png",
   },
   {
-    title: "Reflecta.so",
+    title: "Projekt 3",
     type: "LANDING PAGE",
     bg: "#1a1a1a",
-    description: "Your personal operating system.",
     textLight: true,
+    // image: "/projects/projekt3.png",
   },
   {
-    title: "Project Four",
+    title: "Projekt 4",
     type: "PRODUCT",
     bg: "#4169E1",
-    description: "Coming soon.",
+    // image: "/projects/projekt4.png",
   },
   {
-    title: "Project Five",
+    title: "Projekt 5",
     type: "SIDE PROJECT",
     bg: "#e8e8e8",
-    description: "In progress.",
+    // image: "/projects/projekt5.png",
   },
   {
-    title: "Project Six",
+    title: "Projekt 6",
     type: "DESIGN",
     bg: "#FF6B00",
-    description: "Creative direction.",
+    // image: "/projects/projekt6.png",
   },
 ];
 
@@ -62,16 +63,23 @@ function ProjectCard({
       className="group cursor-pointer"
     >
       <div
-        className="w-full aspect-[4/3] rounded-sm mb-3 overflow-hidden relative flex items-center justify-center transition-transform duration-300 group-hover:scale-[0.98]"
+        className="w-full aspect-[4/3] rounded-sm mb-3 overflow-hidden relative transition-transform duration-300 group-hover:scale-[0.98]"
         style={{ background: project.bg }}
       >
-        <p
-          className={`text-xs font-medium opacity-30 ${
-            project.textLight ? "text-white" : "text-black"
-          }`}
-        >
-          {project.title}
-        </p>
+        {"image" in project && project.image ? (
+          <Image
+            src={project.image as string}
+            alt={project.title}
+            fill
+            className="object-cover"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <p className={`text-xs font-medium opacity-20 ${project.textLight ? "text-white" : "text-black"}`}>
+              {project.title}
+            </p>
+          </div>
+        )}
       </div>
       <p className="text-sm font-medium">{project.title}</p>
       <p className="text-xs text-gray-400 mt-0.5">{project.type}</p>

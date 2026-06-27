@@ -26,8 +26,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="flex-1 flex flex-col justify-end pb-16 px-5 min-h-screen">
-      <div>
+    <section className="flex flex-col justify-end px-5 min-h-screen pb-0">
+      <div className="pb-16">
         <p className="text-3xl md:text-5xl font-normal leading-tight tracking-tight">
           Hi, I&apos;m Constantin.
         </p>
@@ -41,8 +41,8 @@ export default function Hero() {
           </span>
         </p>
       </div>
-      <div className="mt-8 flex justify-center">
-        <p className="text-xs text-gray-400 tracking-widest uppercase">
+      <div className="flex justify-center pb-6">
+        <p className="text-xs text-gray-400 tracking-widest">
           Scroll to reveal ↓
         </p>
       </div>
