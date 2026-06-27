@@ -25,7 +25,7 @@ export default function Navbar() {
       </div>
 
       <a
-        href="mailto:your@email.com"
+        href="mailto:constantin@wuthenau.de"
         className={`flex items-center gap-2 text-sm px-3 py-1.5 rounded-full border transition-colors ${
           isAbout
             ? "border-white/30 text-white hover:bg-white/10"
