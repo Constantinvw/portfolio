@@ -19,7 +19,7 @@ const showcaseProjects: Project[] = [
   {
     title: "TEAM MALIZIA",
     label: "NAVAL ENGINEERING · OCEAN RACE 2026",
-    images: ["/projects/malizia1.1.jpg", "/projects/malizia1.2.jpeg"],
+    images: ["/projects/malizia1.1.jpeg", "/projects/malizia1.2.jpeg"],
     bg: "#0a1628",
     type: "NAVAL ENGINEERING",
     year: "2026",

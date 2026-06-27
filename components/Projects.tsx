@@ -22,7 +22,7 @@ const projects: Project[] = [
     type: "NAVAL ENGINEERING",
     bg: "#0a1628",
     textLight: true,
-    images: ["/projects/malizia1.1.jpg", "/projects/malizia1.2.jpeg"],
+    images: ["/projects/malizia1.1.jpeg", "/projects/malizia1.2.jpeg"],
     year: "2026",
     description:
       "Part of the technical team for the new Malizia IMOCA Seaxplorer 4, contributing to design and construction ahead of the launch and the Ocean Race Atlantic in New York.",
