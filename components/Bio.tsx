@@ -16,12 +16,11 @@ export default function Bio() {
       className="px-5 py-20 max-w-2xl"
     >
       <p className="text-base md:text-lg leading-relaxed text-gray-800">
-        {/* Ersetze diesen Text mit deinem eigenen */}
-        I design and build software products, either to make money or for fun.
-        Some reach thousands, some fail.{" "}
+        I design and build robots — for racing oceans, exploring underwater, and
+        flying autonomously.{" "}
         <span className="text-gray-400">
-          I&apos;m based in Germany, currently working on AI-native products and
-          building in public.
+          Some reach the finish line, some sink. Currently at TEAM MALIZIA,
+          contributing to the IMOCA Seaxplorer 4 for the Ocean Race Atlantic.
         </span>
       </p>
     </motion.section>

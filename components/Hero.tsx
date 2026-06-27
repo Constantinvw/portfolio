@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react";
 
 const rotatingWords = [
-  "stuff.",
-  "products.",
+  "robots.",
+  "systems.",
+  "drones.",
+  "hardware.",
   "ideas.",
-  "apps.",
-  "experiences.",
 ];
 
 export default function Hero() {

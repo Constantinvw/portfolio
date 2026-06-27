@@ -5,31 +5,58 @@ export default function About() {
 
       <div className="max-w-lg space-y-6 text-sm leading-7 text-white/90">
         <p>
-          Hi, I&apos;m Constantin. I design and build software products, either
-          to make money or for fun. Some reach thousands, some fail.
+          Hi, I&apos;m Constantin. I design and build robots — for racing
+          oceans, exploring underwater, and flying autonomously. Some reach the
+          finish line, some sink.
         </p>
         <p>
-          At 21, I started my first company and got into building software
-          products from scratch — combining design, code, and product thinking.
+          Currently I&apos;m part of the technical team at{" "}
+          <a
+            href="https://www.team-malizia.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 underline underline-offset-2 hover:text-blue-300 transition-colors"
+          >
+            TEAM MALIZIA
+          </a>
+          , contributing to the design and construction of the IMOCA Seaxplorer
+          4 ahead of the Ocean Race Atlantic in New York.
         </p>
         <p>
-          I&apos;ve worked alongside founders and built various products
-          including tools that reached thousands of people within a few weeks of
-          launching.
-        </p>
-        <p>
-          Currently I&apos;m exploring{" "}
+          Before that, I wrote my Bachelor&apos;s thesis on visual SLAM for
+          underwater robotics at{" "}
+          <a
+            href="https://tethys-robotics.ch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 underline underline-offset-2 hover:text-blue-300 transition-colors"
+          >
+            Tethys Robotics
+          </a>{" "}
+          in Zürich, and spent over a year as Controls &amp; Hardware Engineer
+          for{" "}
           <a
             href="#"
             className="text-blue-400 underline underline-offset-2 hover:text-blue-300 transition-colors"
           >
-            AI-native products
-          </a>{" "}
-          and building in public.
+            SWARM
+          </a>
+          , an autonomous multi-agent underwater system at ETH Zürich.
+        </p>
+        <p>
+          I also co-founded{" "}
+          <a
+            href="#"
+            className="text-blue-400 underline underline-offset-2 hover:text-blue-300 transition-colors"
+          >
+            Efsyco
+          </a>
+          , building autonomous fixed-wing aerial solutions that operate
+          reliably where GPS fails.
         </p>
         <p className="text-white/40">
-          Based in Germany. Available for freelance work and interesting
-          projects.
+          Studied at ETH Zürich. Based in Lorient, France. Open to interesting
+          engineering challenges.
         </p>
       </div>
     </main>

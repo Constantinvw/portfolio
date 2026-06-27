@@ -6,41 +6,44 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Projekt 1",
-    type: "PRODUCT",
-    bg: "#4169E1",
-    // image: "/projects/projekt1.png",  ← Foto: einfach in public/projects/ ablegen und hier eintragen
-  },
-  {
-    title: "Projekt 2",
-    type: "PRODUCT",
-    bg: "#FF6B00",
-    // image: "/projects/projekt2.png",
-  },
-  {
-    title: "Projekt 3",
-    type: "LANDING PAGE",
-    bg: "#1a1a1a",
+    title: "TEAM MALIZIA",
+    type: "NAVAL ENGINEERING",
+    bg: "#0a1628",
     textLight: true,
-    // image: "/projects/projekt3.png",
+    // image: "/projects/malizia.jpg",
   },
   {
-    title: "Projekt 4",
-    type: "PRODUCT",
-    bg: "#4169E1",
-    // image: "/projects/projekt4.png",
+    title: "Efsyco",
+    type: "STARTUP · FOUNDER",
+    bg: "#111111",
+    textLight: true,
+    // image: "/projects/efsyco.jpg",
   },
   {
-    title: "Projekt 5",
-    type: "SIDE PROJECT",
+    title: "SWARM · Aris ETH",
+    type: "UNDERWATER ROBOTICS",
+    bg: "#0d2233",
+    textLight: true,
+    // image: "/projects/swarm.jpg",
+  },
+  {
+    title: "Tethys Robotics",
+    type: "BACHELOR THESIS",
+    bg: "#1a3a5c",
+    textLight: true,
+    // image: "/projects/tethys.jpg",
+  },
+  {
+    title: "ETH Zürich",
+    type: "TEACHING ASSISTANT",
     bg: "#e8e8e8",
-    // image: "/projects/projekt5.png",
+    // image: "/projects/eth.jpg",
   },
   {
-    title: "Projekt 6",
-    type: "DESIGN",
-    bg: "#FF6B00",
-    // image: "/projects/projekt6.png",
+    title: "Next Project",
+    type: "COMING SOON",
+    bg: "#f0f0f0",
+    // image: "/projects/next.jpg",
   },
 ];
 
