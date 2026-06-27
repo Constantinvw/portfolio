@@ -39,7 +39,7 @@ const projects: Project[] = [
   },
   {
     title: "Tethys Robotics",
-    type: "BACHELOR THESIS",
+    type: "VISUAL SLAM NAVIGATION",
     bg: "#1a3a5c",
     textLight: true,
     images: ["/projects/tethys1.1.png", "/projects/tethys1.2.jpg"],
