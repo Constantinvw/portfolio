@@ -1,30 +1,40 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import ProjectModal, { type Project } from "./ProjectModal";
 
-const projects = [
-  {
-    title: "TEAM MALIZIA",
-    type: "NAVAL ENGINEERING",
-    bg: "#0a1628",
-    textLight: true,
-    image: "/projects/malizia1.2.jpeg",
-  },
+const projects: Project[] = [
   {
     title: "Efsyco",
     type: "STARTUP · FOUNDER",
     bg: "#111111",
     textLight: true,
-    image: "/projects/efsyco1.2.jpeg",
+    image: "/projects/efsyco1.1.png",
+    year: "2025–",
+    description:
+      "Co-founding Efsyco, building autonomous fixed-wing aerial solutions that operate reliably where GPS fails — across inspection, infrastructure, and other demanding use cases. Early days, moving fast.",
+  },
+  {
+    title: "TEAM MALIZIA",
+    type: "NAVAL ENGINEERING",
+    bg: "#0a1628",
+    textLight: true,
+    image: "/projects/malizia1.1.jpeg",
+    year: "2026",
+    description:
+      "Part of the technical team for the new Malizia IMOCA Seaxplorer 4, contributing to design and construction ahead of the launch and the Ocean Race Atlantic in New York.",
   },
   {
     title: "SWARM · Aris ETH",
     type: "UNDERWATER ROBOTICS",
     bg: "#0d2233",
     textLight: true,
-    image: "/projects/swarm1.2.jpeg",
+    image: "/projects/swarm1.1.jpeg",
+    year: "2024–2025",
+    description:
+      "Controls & Hardware Engineer and Head of Sponsorships for SWARM, an autonomous multi-agent underwater system developed at ETH Zürich as part of the Aris Focus Project.",
   },
   {
     title: "Tethys Robotics",
@@ -32,29 +42,20 @@ const projects = [
     bg: "#1a3a5c",
     textLight: true,
     image: "/projects/tethys1.1.png",
-  },
-  {
-    title: "SWARM — Field Tests",
-    type: "HARDWARE",
-    bg: "#0d2233",
-    textLight: true,
-    image: "/projects/swarm1.3.jpeg",
-  },
-  {
-    title: "Tethys Robotics",
-    type: "RESEARCH",
-    bg: "#1a3a5c",
-    textLight: true,
-    image: "/projects/tethys1.2.jpg",
+    year: "2025",
+    description:
+      "Bachelor's thesis on visual SLAM for underwater robotics at Tethys Robotics, in collaboration with the Mobile Robotics Lab at ETH Zürich, building on the SWARM focus project.",
   },
 ];
 
 function ProjectCard({
   project,
   index,
+  onClick,
 }: {
-  project: (typeof projects)[0];
+  project: Project;
   index: number;
+  onClick: () => void;
 }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
@@ -64,27 +65,20 @@ function ProjectCard({
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
+      transition={{ duration: 0.5, delay: (index % 2) * 0.1 }}
       className="group cursor-pointer"
+      onClick={onClick}
     >
       <div
-        className="w-full aspect-[4/3] rounded-sm mb-3 overflow-hidden relative transition-transform duration-300 group-hover:scale-[0.98]"
+        className="w-full aspect-[4/3] rounded-xl mb-3 overflow-hidden relative transition-transform duration-300 group-hover:scale-[0.98]"
         style={{ background: project.bg }}
       >
-        {"image" in project && project.image ? (
-          <Image
-            src={project.image as string}
-            alt={project.title}
-            fill
-            className="object-cover"
-          />
-        ) : (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <p className={`text-xs font-medium opacity-20 ${project.textLight ? "text-white" : "text-black"}`}>
-              {project.title}
-            </p>
-          </div>
-        )}
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="object-cover"
+        />
       </div>
       <p className="text-sm font-medium">{project.title}</p>
       <p className="text-xs text-gray-400 mt-0.5">{project.type}</p>
@@ -93,14 +87,25 @@ function ProjectCard({
 }
 
 export default function Projects() {
+  const [selected, setSelected] = useState<Project | null>(null);
+
   return (
-    <section className="px-5 pb-24">
-      <p className="text-xs text-gray-400 mb-6 tracking-wide">↓ Projects</p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {projects.map((project, i) => (
-          <ProjectCard key={project.title} project={project} index={i} />
-        ))}
-      </div>
-    </section>
+    <>
+      <section className="px-5 pb-24">
+        <p className="text-xs text-gray-400 mb-6 tracking-wide">↓ Projects</p>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 md:gap-6">
+          {projects.map((project, i) => (
+            <ProjectCard
+              key={project.title}
+              project={project}
+              index={i}
+              onClick={() => setSelected(project)}
+            />
+          ))}
+        </div>
+      </section>
+
+      <ProjectModal project={selected} onClose={() => setSelected(null)} />
+    </>
   );
 }

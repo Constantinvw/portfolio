@@ -16,11 +16,10 @@ export default function Bio() {
       className="px-5 py-20 max-w-2xl"
     >
       <p className="text-base md:text-lg leading-relaxed text-gray-800">
-        I design and build robots — for racing oceans, exploring underwater, and
-        flying autonomously.{" "}
+        I design and build robots - for flying autonomously, racing oceans, and exploring underwater.{" "}
         <span className="text-gray-400">
-          Some reach the finish line, some sink. Currently at TEAM MALIZIA,
-          contributing to the IMOCA Seaxplorer 4 for the Ocean Race Atlantic.
+          Currently co-founding Efsyco, autonomous fixed-wing aerial solutions. Intern at TEAM MALIZIA,
+          contributing to the IMOCA Seaxplorer 4 for the Ocean Race Atlantic. 
         </span>
       </p>
     </motion.section>

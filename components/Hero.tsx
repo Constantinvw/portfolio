@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 
 const rotatingWords = [
   "robots.",
-  "systems.",
   "drones.",
   "hardware.",
+  "control systems.",
   "ideas.",
 ];
 

@@ -6,22 +6,16 @@ import Image from "next/image";
 
 const showcaseProjects = [
   {
-    title: "TEAM MALIZIA",
-    label: "NAVAL ENGINEERING · OCEAN RACE 2026",
-    image: "/projects/malizia1.1.jpeg",
-    bg: "#0a1628",
-  },
-  {
     title: "Efsyco",
     label: "AUTONOMOUS DRONES · STARTUP",
     image: "/projects/efsyco1.1.png",
     bg: "#111111",
   },
   {
-    title: "SWARM · Aris ETH",
-    label: "MULTI-AGENT UNDERWATER SYSTEM",
-    image: "/projects/swarm1.1.jpeg",
-    bg: "#0d2233",
+    title: "TEAM MALIZIA",
+    label: "NAVAL ENGINEERING · OCEAN RACE 2026",
+    image: "/projects/malizia1.1.jpeg",
+    bg: "#0a1628",
   },
 ];
 
@@ -56,7 +50,6 @@ function ShowcaseCard({ project }: { project: (typeof showcaseProjects)[0] }) {
               onError={() => {}} // silently falls back to bg color
             />
           )}
-          <div className="absolute inset-0 bg-black/30" />
           <div className="absolute bottom-8 left-8">
             <p className="text-white/60 text-xs uppercase tracking-widest mb-1">
               {project.label}
